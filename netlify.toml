@@ -1,0 +1,7 @@
+[build]
+    publish = "dist"
+    command = "yarn build"
+[build.environment]
+    NODE_VERSION = "14"
+    YARN_VERSION = "1.21.1"
+    apiURL = "https://api.guildwars2.com/v2"

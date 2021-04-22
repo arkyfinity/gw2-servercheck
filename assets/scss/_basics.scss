@@ -1,0 +1,55 @@
+body {
+    margin: 2rem 0;
+    background-color: $bg-color;
+    font-family: $font;
+    color: $text-color;
+}
+
+h1 {
+    margin: 0 0 2rem;
+}
+
+h3 {
+    margin: 0 0 1rem;
+}
+
+a {
+    color: $color-blue;
+
+    @include hover-state {
+        color: darken($color-blue, 10%);
+    }
+}
+
+p {
+    margin: 0;
+}
+
+.section-title {
+    text-align: center;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.population-low {
+    color: $color-blue;
+}
+
+.population-medium {
+    color: $color-green;
+}
+
+.population-high {
+    color: $color-yellow;
+}
+
+.population-very-high {
+    color: $color-orange;
+}
+
+.population-full {
+    color: $color-red;
+}

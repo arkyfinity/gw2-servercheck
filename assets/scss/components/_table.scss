@@ -1,0 +1,83 @@
+table {
+    border-collapse: collapse;
+}
+
+.table {
+    width: 100%;
+    background-color: $color-light;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+
+    thead {
+        th {
+            position: relative;
+            padding: .75rem 1.5rem .75rem 1rem;
+            border-bottom: 2px solid darken($color-gray, 5%);
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            user-select: none;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                right: .75rem;
+                display: block;
+                width: 1.25rem;
+                height: 1rem;
+                opacity: .3;
+            }
+
+            &:before {
+                top: calc(50% - 14px);
+                background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0yODguNjYyIDM1MkgzMS4zMzhjLTE3LjgxOCAwLTI2Ljc0MS0yMS41NDMtMTQuMTQyLTM0LjE0MmwxMjguNjYyLTEyOC42NjJjNy44MS03LjgxIDIwLjQ3NC03LjgxIDI4LjI4NCAwbDEyOC42NjIgMTI4LjY2MmMxMi42IDEyLjU5OSAzLjY3NiAzNC4xNDItMTQuMTQyIDM0LjE0MnoiIC8+PC9zdmc+) no-repeat;
+
+                @media (min-width: 460px) {
+                    top: .5rem;
+                }
+            }
+
+            &:after {
+                bottom: calc(0% + 14px);
+                background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0zMS4zIDE5MmgyNTcuM2MxNy44IDAgMjYuNyAyMS41IDE0LjEgMzQuMUwxNzQuMSAzNTQuOGMtNy44IDcuOC0yMC41IDcuOC0yOC4zIDBMMTcuMiAyMjYuMUM0LjYgMjEzLjUgMTMuNSAxOTIgMzEuMyAxOTJ6IiAvPjwvc3ZnPg==) no-repeat;
+
+                @media (min-width: 460px) {
+                    bottom: .5rem;
+                }
+            }
+
+            &.sort-asc {
+                &:before {
+                    opacity: 1;
+                }
+            }
+
+            &.sort-desc {
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:last-of-type {
+                border-left: 1px solid darken($color-gray, 5%);
+            }
+        }
+    }
+
+    tbody > tr {
+        &:nth-of-type(2n+1) {
+            background-color: lighten($color-gray, 1%);
+        }
+
+        > td {
+            padding: .75rem 1rem;
+            border-top: 1px solid darken($color-gray, 5%);
+            vertical-align: top;
+
+            &:last-of-type {
+                border-left: 1px solid darken($color-gray, 5%);
+            }
+        }
+    }
+}
