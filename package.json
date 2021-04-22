@@ -37,16 +37,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moso/gw2-servercheck/gw2-servercheck.git"
+    "url": "git+https://github.com/arkyfinity/gw2-servercheck/gw2-servercheck.git"
   },
   "author": {
-    "name": "Morten Sørensen",
-    "email": "morten@moso.io",
-    "url": "https://moso.io"
+    "name": "Arky",
+    "email": "hello@arky.dk",
+    "url": "https://arky.dk"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/moso/gw2-servercheck/issues"
+    "url": "https://github.com/arkyfinity/gw2-servercheck/issues"
   },
-  "homepage": "https://moso.io"
+  "homepage": "https://arky.dk"
 }
