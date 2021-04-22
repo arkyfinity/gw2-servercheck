@@ -48,11 +48,9 @@ export default {
         'gw2-table': () => import('~/components/gw2-table.vue')
     },
 
-    data() {
-        return {
-            darkMode: false
-        }
-    },
+    data: () => ({
+        darkmode: false
+    }),
 
     async asyncData({ req }) {
         // Server ID's - https://wiki.guildwars2.com/wiki/API:2/worlds
