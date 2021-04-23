@@ -1,0 +1,40 @@
+.darkmode {
+    background-color: $color-dark;
+
+    .section-title {
+        color: $color-gray;
+    }
+
+    .table {
+        background-color: lighten($color-dark, 3%);
+
+        thead > tr > th {
+            color: darken($color-gray, 15%);
+            border-bottom: 2px solid darken($color-gray, 75%);
+
+            &:last-of-type {
+                border-left-color: transparent;
+            }
+        }
+
+        tbody > tr {
+            color: darken($color-gray, 15%);
+
+            &:nth-of-type(2n+1) {
+                background-color: lighten($color-dark, .5%);
+            }
+
+            td {
+                border-color: transparent;
+
+                &:last-of-type {
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+
+    footer {
+        color: $color-gray;
+    }
+}
